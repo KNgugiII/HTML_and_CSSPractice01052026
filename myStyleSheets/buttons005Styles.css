@@ -1,0 +1,175 @@
+.cssUberBttn{
+        background-color: rgb(39, 38, 38);
+        color: white;
+        border: solid;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        transition: background-color 0.15s, color 0.15s;
+
+        vertical-align: top;
+      }
+
+      .cssUberBttn:hover{
+        opacity: 0.6;
+      }
+
+      .cssUberBttn:active{
+        background-color: white;
+        color: black;
+        border-style: solid;
+      }
+
+      .cssAmazonBttn{
+        background-color: yellow;
+        color: black;
+        font-weight:600;
+        cursor:default;
+        border: none;
+        border-radius:60px ;
+        padding-top: 15px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        transition: background-color 0.15s, color 0.15s;
+
+        vertical-align: top;
+      }
+
+      .cssAmazonBttn:hover{
+        background-color: black;
+        color: yellow;
+        font-weight: bold;
+      }
+
+      .cssAmazonBttn:active{
+        opacity: 0.6;
+      }
+
+      .cssGitHubBttn{
+        background-color: rgb(26, 138, 26);
+        color: white;
+        font-weight: bold;
+        font: size 600px; ;
+        border: solid;
+        border-radius: 10px;
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        transition: box-shadow 0.15s;
+
+        vertical-align: top;
+      }
+
+      .cssGitHubBttn:hover{
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+      }
+
+      .cssBootstrapBttn{
+        background-color: rgb(129, 74, 129);
+        color: white;
+        font-weight: bold;
+        font: size 600px; ;
+        border: solid;
+        border-radius: 5px;
+        cursor: default;
+        margin-right: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        vertical-align: top;
+      }
+
+      .cssBootstrapBttn:hover{
+        opacity: 0.6;
+      }
+
+      .cssBootstrapBttn:active{
+        background-color: white;
+        color:black ;
+        border-color: black;
+      }
+
+      .cssBSDownloadBttn{
+        background-color:white;
+        color: grey;
+        font-weight: bold;
+        font: size 600px; ;
+        border-style: solid;
+        border-radius: 5px;
+        border-color:grey;
+        border-width: 1px;
+        cursor: default;
+        padding-top: 9px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        vertical-align: top;
+      }
+
+      .cssBSDownloadBttn:hover{
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+      }
+
+      .cssBSDownloadBttn:active{
+        background-color:red;
+        color:black;
+        border-style: none;
+      }
+
+      .cssLinkedInBttn{
+        background-color: rgb(36, 36, 230);
+        color: white;
+        font-weight:bold;
+        cursor:pointer;
+        border: none;
+        border-radius:60px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        
+        vertical-align: top;
+      }
+
+      .cssLinkedInBttn:hover{
+        opacity: 0.6;
+      }
+
+      .cssLinkedInBttn:active{
+        background-color:blueviolet;
+        border-width: 2px;
+      }
+
+      .cssLinkedInSaveBttn{
+        background-color:white;
+        color: blue;
+        font-weight:bold;
+        cursor:pointer;
+        border: solid;
+        border-radius:60px;
+        border-width: 1px;
+        margin-right: 5px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        vertical-align: top;
+      }
+
+      .cssLinkedInSaveBttn:hover{
+        background-color:blue;
+        color: white;
+      }
