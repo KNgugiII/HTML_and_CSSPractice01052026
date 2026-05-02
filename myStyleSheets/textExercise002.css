@@ -1,0 +1,54 @@
+p {
+        font-family: Pacifico;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: grey;
+        font-size: 14px;
+      }
+
+
+      .cssVideoTitle{
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        width: 300px;
+        line-height: 24px;
+        margin-bottom: 5px;
+      }
+
+      .cssVideoInfo{
+        margin-bottom:15px;
+      }
+
+      .cssVideoAuthor{
+        margin-bottom: 15px;
+      }
+
+      .cssVideoDescription{
+        width: 280px;
+        line-height: 20px;
+        margin-bottom: 35px;
+      }
+
+      .cssAppleProd{
+        text-align: center;
+        background-color: rgb(227,65,64);
+        color: white;
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+
+      .cssTextElementBestSelection{
+        font-style: italic;
+      }
+
+      .cssApplePurchaseCTA{  
+        cursor: pointer;
+      }
+
+      .cssApplePurchaseCTA:hover{
+        color: blue;
+        text-decoration: underline;
+        
+      }
