@@ -1,0 +1,216 @@
+<!DOCTYPE html>     <!--This implies that this is a HTML5 document type-->
+
+<html>
+    <head>
+        <title>
+            ImagesAndTextBoxesExercise
+        </title>
+
+        <style>
+            p{
+                font-family: arial;
+            }
+
+            .cssRoundCat{
+                width: 200px;
+                border-radius: 15px;
+                vertical-align: top;
+            }
+            
+            .cssSquareCat{
+                width: 200px;
+                height: 200px;
+                /*border:1px;*/
+                /*border-color: red;*/
+                /*border-style: solid;*/
+                object-fit: contain;
+                object-position: center;
+                vertical-align: top;
+            }
+
+            .cssCircularCat{
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+                vertical-align: top;
+            }
+
+            .csstxtbxSearch001{
+                font-size: 14px;
+                font-family: arial;
+                text-align: left;
+                border-radius: 5px;
+                border-width: 1px;
+                border-color: grey;
+                border-style: solid;
+                height: 35px;
+                width: 150px;
+                padding-left: 15px;
+                vertical-align: top;
+            }
+
+            .csstxtbxSearch002{
+                font-size: 10px;
+                font-family: arial;
+                text-align: left;
+                border-radius: 5px;
+                height: 30px;
+                width: 250px;
+                padding-left: 10px;
+                border-radius: 15px;
+                border-style: none;
+                cursor: pointer;
+                vertical-align: top;
+            }
+
+            .csstxtbxSearch002:hover{
+                box-shadow: 10px 10px 10px rgba(15, 15, 15, 0.4);
+            }
+
+            .cssLinkedIn{
+                font-family: Arial;
+                font-size: 14px;
+                color: grey;
+                margin-bottom: 0;
+                vertical-align: top;
+            }
+
+            .cssLinkedInTxtBx{
+                font-family: Arial;
+                font-size: 14px;
+                font-weight: 50px;
+                color: grey;  
+                height: 30px;
+                width: 290px;
+                border-width: 2px;
+                border-color: grey;
+                border-style: solid;
+                border-radius: 5px;
+                margin-top: 5px;
+                margin-bottom: 0;
+                vertical-align: top;
+            }
+
+            .cssLinkedInTandCs{
+                font-family: Arial;
+                font-size: 11px;
+                font-weight: 50px;
+                color: grey;
+                margin-top: 10px;
+                margin-bottom: 0;
+                width: 300px;
+                vertical-align: top;
+            }
+
+            .cssLinkedInBttn{
+                margin-top: 10px;
+                height: 50px;
+                width: 300px;
+                background-color: rgb(0,119,181);
+                color: white;
+                border-radius: 25px;
+                border-color: grey;
+                border-style: none;
+                vertical-align: top;
+            }
+
+
+            .cssTwitterIcon{
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                border-radius: 25px;
+                vertical-align: middle;
+                margin-right: 5px;
+            }
+
+            .cssTwitterTxtBttn{
+                font-size: 14px;
+                vertical-align: middle;
+                border-style: none;
+                margin-right: 5px;
+                height: 30px;
+                width: 200px;
+            }
+
+            .cssTweetBttn{
+                font-size: 14px;
+                font-weight: bold;
+                vertical-align: middle;
+                background-color: rgb(29, 161, 242);
+                height: 30px;
+                width: 70px;
+                border-style: none;
+                color: white;
+                border-radius: 15px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        
+        <p>
+            1a - Load the image, set width to 200px and add rounded corners.
+        </p>
+        <!--The below void element adds a cat image on the webpage-->
+        <img class="cssRoundCat" src="/YoutubeImages/pussycat.jpeg" >
+
+        <p>
+            2a - Make the image a square, center the image within the square.
+        </p>
+        <!--The below void element adds a cat image on the webpage-->
+        <img class="cssSquareCat" src="/YoutubeImages/pussycat.jpeg" >
+
+        <p>
+            3a - Make the image a circle.
+        </p>
+        <!--The below void element adds a cat image on the webpage-->
+        <img class="cssCircularCat" src="/YoutubeImages/pussycat.jpeg" >
+
+        <p>
+           4a - Create a textbox with rounded corners with the word 'Search' inscribed.
+        </p>
+
+        <input type="text" class="csstxtbxSearch001" placeholder="Search">
+
+        <p>
+           5a - Create a textbox with a shadow and no border and with the word 'Search Google or type a URL' inscribed.
+        </p>
+
+        <input type="text" class="csstxtbxSearch002" placeholder="Search Google or type a URL">
+
+
+        <p>
+           6a - Create a LinkedIn Signup box.
+        </p>
+
+        <p class="cssLinkedIn">
+            Email
+        </p>
+
+        <input type="text" class="cssLinkedInTxtBx">
+
+        <p class="cssLinkedInTandCs">
+            By clicking Agree &amp; Join, you agree to the Privacy Policy.
+        </p>
+
+        <button class="cssLinkedInBttn">
+            Agree & Join
+        </button>
+
+        <p>
+           7a - Create a Twitter Signup box.
+        </p>
+
+         <img src="/YoutubeImages/pussycat.jpeg" class="cssTwitterIcon">
+
+         <input type="text" placeholder="What's happening?" class="cssTwitterTxtBttn">
+
+         <button class="cssTweetBttn"> Tweet </button>
+
+    </body>
+
+</html>
