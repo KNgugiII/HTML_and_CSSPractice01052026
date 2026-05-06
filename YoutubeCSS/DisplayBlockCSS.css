@@ -1,0 +1,156 @@
+.cssTxtBxName,
+            .cssTxtBxEmail{
+                color: grey;
+                font-family: arial;
+                font-size: 14px;
+                display: block;
+                margin-bottom: 3px;
+            }
+
+            .cssQuickSurveyParagraph{
+                font-family: arial;
+                font-size: 22px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 300px;
+            }
+
+            .cssYesBttn,
+            .cssNoBttn{
+                font-family: arial;
+                font-size: 14px;
+                color: black;
+                background-color: rgb(245, 239, 239);
+                border-style: solid;
+                border-color: grey;
+                border-radius: 3px;
+                border-width: 1px;
+                text-align: center;
+                height: 20px;
+                width: 36.84px;
+                display: inline-block;
+            }
+
+            .cssGoogleImage{
+                width: 300px;
+                display: block;
+                margin-left: 100px;
+                margin-bottom: 0;
+            }
+
+            .cssGoogleSearchBox{
+                margin-top: 5px;
+                height: 30px;
+                width: 500px;
+                text-align: left;
+                border-radius: 15px;
+                border-style: hidden;
+                box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+            }
+
+
+            .cssFirstName,
+            .cssLastName{
+                font-family: arial;
+                font-size: 14px;
+                text-align: left;
+                height: 30px;
+                width: 100px;
+                padding-left: 10px;
+                border-color: grey;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                margin-left: 1px;
+                margin-top: 0;
+                margin-bottom: 3px;
+                display: inline-block;
+            }
+
+            .cssEmailAddress{
+                font-family: arial;
+                font-size: 14px;
+                text-align: left;
+                height: 30px;
+                width: 220px;
+                padding-left: 10px;
+                border-color: grey;
+                border-radius: 5px;
+                border-style: solid;
+                border-width: 1px;
+                margin-top: 3px;
+                margin-bottom: 0px;
+                display: block;
+            }
+
+            .cssSignUp{
+                font-family: arial;
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                background-color:rgb(24, 119, 242);
+                height: 30px;
+                width: 235px;
+                text-align: center;
+                border-radius: 5px;
+                border-style: none;
+                margin-top: 7px;
+                margin-bottom: 3px;
+                display: block;
+            }
+
+            .cssRequestaRideCTA{
+                font-family: calibri;
+                font-size: xx-large;
+                color: black;
+                text-align: left;
+                display: block;
+            }
+
+            .cssPickUpLocation,
+            .cssDestination{
+                font-family: calibri;
+                font-size: x-large;
+                height: 30px;
+                width: 500px;
+                margin-top: 0;
+                margin-bottom: 5px;
+                background-color: rgb(241, 236, 236);
+                padding: 10px;
+                display: block;
+                border-style: solid;
+                border-color: rgb(241, 236, 236);
+                border-width: 1px;
+            }
+
+            .cssRequestNow{
+                font-family: calibri;
+                font-size: x-large;
+                color: white;
+                background-color: rgb(0,0,0);
+                margin-top: 20px;
+                margin-bottom: 0;
+                border-style: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: inline-block;
+            }
+
+            .cssScheduleLater{
+                font-family: calibri;
+                font-size: x-large;
+                font: black;
+                margin-top: 0;
+                margin-bottom: 5px;
+                background-color: rgb(241, 236, 236);
+                margin-top: 20px;
+                margin-bottom: 0;
+                border-style: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                display: inline-block;
+            }
