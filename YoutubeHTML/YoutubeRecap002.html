@@ -1,0 +1,161 @@
+<!DOCTYPE htm>      <!--This implies that this is a HTML5 document type-->
+
+<html>
+
+    <head>
+        <title>
+            YouTubeCloneAttempt002
+        </title>
+
+            <!--
+            The below web fonts have been obtained from Google Fonts. They are any font used in a website’s design that isn’t installed by default on the end user’s device—a counterpart to a system font. 
+            -->
+            
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <style>
+
+            p{
+               font-family: Roboto,Arial; 
+               margin-top: 0;
+               margin-bottom: 0;
+            }
+
+            .cssTXTBXHeaderSearchBox{
+                font-family: roboto,arial;
+                font-size: medium;
+                padding-left: 5px;
+                margin-left: 10px;
+                display: block;
+            }
+
+            .cssIMG001{
+                width: 300px;
+                display: block;
+            }
+
+            .cssDIVVideoPreview{
+                width: 300px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+
+            .cssDIV002BChannelPicture{
+                display: inline-block;
+                width: 50px;
+                vertical-align: top;
+            }
+
+            .cssDIV002BVideoInfo{
+                display: inline-block;
+                width: 200px;
+            }
+
+            .cssIMG002{
+                width: 40px;
+                border-radius: 25px;
+            }
+
+            .cssPRGRPHVideoTitle{
+                font-weight: bold;
+                line-height: 22px;
+                margin-bottom: 12px;
+            }
+
+            .cssPRGRPHVideoAuthor,
+            .cssPRGRPHVideoStats{
+                color: rgb(96, 96, 96);
+                font-size: small;
+            }
+
+            .cssPRGRPHVideoAuthor{
+                margin-bottom: 6px;
+            }
+
+            .cssPrimaryVerticalDIV001A{
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .cssPrimaryVerticalDIV002B{
+                margin-top: 10px;
+                margin-bottom: 0;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!--
+            The aim of this exercise is to illustrate how the Nested DIV Layout Technique works
+        -->
+
+        <!--
+            The Search textbox will be located at the head of the webpage
+        -->
+         <input class="cssTXTBXHeaderSearchBox" type="text" placeholder="Search">
+
+        <!--
+            The below CONTAINER element is useful for holdinging other elements, ie text boxes, images and paragraphs. In this instance, its DISPLAY PROPERTY has been used to limit the extravagance of elements such as the Paragraph element that take up all the space across.
+        -->
+        <div class="cssDIVVideoPreview">
+
+            <div class="cssPrimaryVerticalDIV001A">
+
+                <img class="cssIMG001"  
+                src="/YoutubeThumbnailImages/Marques Brownleethumbnail.webp" 
+                >
+            </div>
+
+            <div class="cssPrimaryVerticalDIV002B">
+
+                <div class="cssDIV002BChannelPicture">
+                    <img class="cssIMG002"  
+                    src="/YoutubeIconImages/Marques BrownleeIcon.jpeg" 
+                    >
+                </div>
+
+                <div class="cssDIV002BVideoInfo">
+                    <p class="cssPRGRPHVideoTitle">
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+
+                    <p class="cssPRGRPHVideoAuthor">
+                        Marques Brownlee
+                    </p>
+
+                    <p class="cssPRGRPHVideoStats">
+                        3.4M views &#183; 6 months ago
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cssDIVVideoPreview">
+
+            <img class="cssIMG001"  src="/YoutubeThumbnailImages/Markiplierthumbnail.webp" >
+
+            <p class="cssPRGRPHVideoTitle">
+                Try Not To Laugh Challenge #9
+            </p>
+
+            <p class="cssPRGRPHVideoAuthor">
+                Markiplier
+            </p>
+
+            <p class="cssPRGRPHVideoStats">
+                19M views &#183; 4 years ago
+            </p>
+
+        </div>
+        
+       
+    </body>
+
+</html>
