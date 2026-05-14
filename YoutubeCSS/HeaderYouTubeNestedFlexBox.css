@@ -1,0 +1,14 @@
+/* Applies settings to search box at the top of the webpage */
+.cssYouTubeSearchTxtBx{
+        padding-left: 15px;
+        font-family: Roboto,Arial;
+        font-size: medium;
+        height: 36px;
+        flex: 1;
+        border-color: grey;
+        border-radius: 3px;
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: inset  1px 2px 3px rgba(252, 252,252, 0.05);
+        width: 0;
+}

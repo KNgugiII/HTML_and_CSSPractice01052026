@@ -1,0 +1,59 @@
+/* Applies Grid settings to the whole webpage */
+            .cssCountryLevelGrid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 15px;
+                row-gap: 40px;
+            }
+            
+            /* Applies Grid settings to the Specific Video Thumbnail */
+            .cssCountyLevelGrid{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            /* Applies Grid settings to the Video Information */
+            .cssSubCountyLevelGrid002{
+                display: grid;
+                grid-template-columns: 50px 1fr;
+            }
+
+            /* Applies Margin settings to the Thumbnail Image Section */
+            .cssSubCountyLevelGrid001{
+                margin-bottom: 12px;
+            }
+
+/* Applies Margin settings to the ProfilePic Div Section */
+            .cssChannelProfPic{
+                margin-right: 15px;
+            }
+
+            /* Applies settings to the video Thumbnail */
+            .cssIMGVideoThumbnail{
+                width: 100%;
+            }
+
+            /* Applies settings to the channel profile picture */
+            .cssIMGUserProfilePic{
+                width: 100%;
+                border-radius: 40px;
+            }
+             
+            /* Applies settings to the Video Title */
+            .cssPRGRPHVideoTitle{
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 5px;
+            }
+
+            /* Applies settings to the Video Author and Stats */
+            .cssPRGRPHVideoStats,
+            .cssPRGRPHVideoAuthor{
+                color:rgb(96, 96,96);
+                font-weight: 200;
+            }
+
+            /* Applies settings ONLY to the Video Author */
+            .cssPRGRPHVideoAuthor{
+                margin-bottom: 5px;
+            }

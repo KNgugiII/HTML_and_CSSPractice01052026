@@ -1,0 +1,11 @@
+ /* Applies settings to all the paragraphs in the webpage */
+p{
+    font-family: Roboto,arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Applies settings to body section of the webpage */
+body{
+    margin: 0;
+}

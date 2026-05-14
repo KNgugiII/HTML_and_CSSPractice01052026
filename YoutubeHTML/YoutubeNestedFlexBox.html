@@ -1,0 +1,625 @@
+<!DOCTYPE html>     <!--This implies that this is a HTML5 document type-->
+
+<html>
+    
+    <head>
+        <title>
+            NestedFlexBox
+        </title>
+
+        <!--FontStack=GoogleWebFonts & Arial as backup-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/YoutubeCSS/GeneralYouTubeNestedFlexBox.css">
+        <link rel="stylesheet" href="/YoutubeCSS/HeaderYouTubeNestedFlexBox.css">
+        <link rel="stylesheet" href="/YoutubeCSS/VideoYouTubeNestedFlexBox.css">
+
+        <style>
+
+            .cssHeaderFlexBox{
+                display: flex;
+                flex-direction: row;
+                height: 60px;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .cssLeftSection001FB{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .cssMidSection002FB{
+                display: flex;
+                flex: 1;
+                justify-content: center;
+                align-items: center;
+                margin-left: 70px;
+                margin-right: 35px;
+                max-width: 400px;
+            }
+
+            .cssRightSection003FB{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 200px;
+                flex-shrink: 0;
+            }
+
+            .cssBttnSearchIcon{
+                height: 40px;
+                width: 60px;
+                border-style: solid;
+                margin-left: -1px;
+                border-width: 1px;
+                background-color: rgb(230, 226, 226); 
+                border-color: grey;
+                margin-right: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .cssBttnVoiceSearchIcon{
+                height: 40px;
+                width: 40px;
+                border-style: none;
+                background-color: rgb(248, 248, 248);
+                border-radius: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .cssIMGSearchIcon{
+                height: 25px;
+            }
+ 
+            .cssIMGVoiceSearchIcon{
+                height: 25px;
+            }
+
+            .cssIMGCreateIcon{
+                height: 25px;
+                margin-right: 10px;
+            }
+
+            .cssIMGYTAppsIcon{
+                height: 25px;
+                margin-right: 10px;
+            }
+
+            .cssIMGNotificationIcon{
+                height: 25px;
+                margin-right: 10px;
+            }
+
+            .cssIMGSuperSimpleDevChannelPic{
+                height: 36px;
+                border-radius: 18px;
+                margin-right: 10px;
+            }
+
+            .cssIMGMenu{
+                height: 25px;
+                margin-right: 20px;
+            }
+
+            .cssIMGYTLogo{
+                height: 25px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="cssHeaderFlexBox">
+            <div class="cssLeftSection001FB">
+                <img class="cssIMGMenu" src="/Youtube Header Icons/hamburger-menu.svg">
+
+                <img class="cssIMGYTLogo"  src="/Youtube Header Icons/youtube-logo.svg">
+            </div>
+
+            <div class="cssMidSection002FB">
+                
+                <!--The YouTube SearchBox-->
+                <input type="text" 
+                    placeholder="Search"
+                    class="cssYouTubeSearchTxtBx"
+                >
+
+                <button class="cssBttnSearchIcon">
+                    <img class="cssIMGSearchIcon"  src="/Youtube Header Icons/search.svg">
+                </button>
+
+                <button class="cssBttnVoiceSearchIcon">
+                    <img class="cssIMGVoiceSearchIcon"  src="/Youtube Header Icons/voice-search-icon.svg">
+                </button>
+
+            </div>
+
+            <div class="cssRightSection003FB">
+                
+                <img class="cssIMGCreateIcon"  src="/Youtube Header Icons/upload.svg">
+
+                <img class="cssIMGYTAppsIcon"  src="/Youtube Header Icons/youtube-apps.svg">
+
+                <img class="cssIMGNotificationIcon"  src="/Youtube Header Icons/notifications.svg">
+
+                <img class="cssIMGSuperSimpleDevChannelPic"  src="/Youtube Header Icons/SuperSimpleDevChannelPic.jpeg">
+
+            </div>
+        </div>
+
+        <div class="cssCountryLevelGrid">   <!--This represents the overall grid layout, ie 3 by 3-->
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Marques Brownleethumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/Marques BrownleeIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Talking Tech and AI with Google CEO Sundar Pichai!
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Marques Brownlee
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            3.4M views &#183; 6 months ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Markiplierthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/MarkiplierIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Try Not To Laugh Challenge #9
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                           Markiplier
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            19M views &#183; 4 years ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/SSSniperWolfthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/SSSniperWolfIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Crazy Tik Toks Taken Moments Before DISASTER
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            SSSniperWolf
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            12M views &#183; 1 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Veritasiumthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/VeritasiumIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Veritasium
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            18M views &#183; 4 months ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/CS Dojothumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/CS DojoIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Kadane's Algorithm to Maximum Sum Subarray Problem
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            CS Dojo
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            519K views &#183; 5 years ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/MrBeastthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/MrBeastIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Anything You Can Fit In The Circle I’ll Pay For
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            MrBeast
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            141M views &#183; 1 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/RealLifeLorethumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/RealLifeLoreIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Why Planes Don't Fly Over Tibet
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Marques Brownlee
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            6.6M views &#183; 1 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Tech Visionthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/Tech VisionIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Inside The World's Biggest Passenger Plane
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Tech Vision
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            3.7M views &#183; 10 months ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/ThenXthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/ThenXIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            The SECRET to Super Human STRENGTH
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            ThenX
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            20M views &#183; 3 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Business Insiderthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/Business InsiderIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Business Insider
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            14M views &#183; 1 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/Destination Tipsthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/Destination TipsIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            Dubai's Crazy Underwater Train and Other Things #Only in Dubai
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            Destination Tips
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            3M views &#183; 1 year ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cssCountyLevelGrid"> <!--This represents the specific grid layout encompassing the video thumbnail, the content creator profile picture and video stats-->
+                <div class="cssSubCountyLevelGrid001">   <!--This represents the thumbnail image-->
+
+                    <img src="/YoutubeThumbnailImages/TED-Edthumbnail.webp" 
+                    class="cssIMGVideoThumbnail"
+                    >
+
+                </div>
+
+                <div class="cssSubCountyLevelGrid002">   <!--This represents the the content creator profile picture and video stats-->
+
+                    <div class="cssChannelProfPic"> 
+
+                        <img src="/YoutubeIconImages/TED-EdIcon.jpeg" 
+                                    class="cssIMGUserProfilePic" 
+                        >
+
+                    </div>
+
+                    <div class="cssVideoInfo"> 
+
+                        <p class="cssPRGRPHVideoTitle">
+                            What would happen if you didn’t drink water? - Mia Nacamulli
+                        </p>
+                                                    
+                        <p class="cssPRGRPHVideoAuthor">
+                            TED-Ed
+                        </p>
+
+                        <p  class="cssPRGRPHVideoStats">
+                            12M views &#183; 5 years ago
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+        </div>     
+    </body>
+
+</html>
