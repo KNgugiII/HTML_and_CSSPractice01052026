@@ -8,4 +8,5 @@ p{
 /* Applies settings to body section of the webpage */
 body{
     margin: 0;
+    padding-top: 80px;
 }

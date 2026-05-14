@@ -1,3 +1,118 @@
+        .cssHeaderFlexBox{
+        display: flex;
+        flex-direction: row;
+        height: 60px;   /*Will also be used by the Position Property below*/
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 0;
+        margin-bottom: 10px;
+
+          /*The below properties set the CSS Position Property*/
+        position: fixed;    /*Fixed implies that this is static, ie does not move*/
+        top: 0;   /*At the very top of the webpage*/
+        right: 0;   /*At the very right of the webpage*/
+        left: 0;   /*At the very left of the webpage*/
+        
+
+        background-color: white;
+
+        /*Add the horizontal heading below the YouTube Header*/        
+        border-bottom-width: 1px;
+        border-bottom-color: rgb(190, 186, 186);
+        border-bottom-style: solid;
+
+        }
+
+        .cssLeftSection001FB{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .cssMidSection002FB{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+        margin-right: 35px;
+        max-width: 400px;  /*Beyond this limit, the section does not stretch*/
+        }
+
+        .cssRightSection003FB{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 200px;
+        flex-shrink: 0;  /*Property ensures that the section does not shrink*/
+        }
+
+        .cssBttnSearchIcon{
+        height: 40px;
+        width: 60px;
+        border-style: solid;
+        margin-left: -1px;
+        border-width: 1px;
+        background-color: rgb(230, 226, 226); 
+        border-color: grey;
+        margin-right: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+
+        .cssBttnVoiceSearchIcon{
+        height: 40px;
+        width: 40px;
+        border-style: none;
+        background-color: rgb(248, 248, 248);
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        }
+
+        .cssIMGSearchIcon{
+        height: 25px;  /*Observation, when it comes to images, Use H as opposed to W*/
+        }
+
+        .cssIMGVoiceSearchIcon{
+        height: 25px;
+        }
+
+        .cssIMGCreateIcon{
+        height: 25px;
+        margin-right: 10px;
+        }
+
+        .cssIMGYTAppsIcon{
+        height: 25px;
+        margin-right: 10px;
+        }
+
+        .cssIMGNotificationIcon{
+        height: 25px;
+        margin-right: 10px;
+        }
+
+        .cssIMGSuperSimpleDevChannelPic{
+        height: 36px;
+        border-radius: 18px;
+        margin-right: 10px;
+        }
+
+        .cssIMGMenu{
+        height: 25px;
+        margin-right: 20px;
+        }
+
+        .cssIMGYTLogo{
+        height: 25px;
+        }
+
+
 /* Applies settings to search box at the top of the webpage */
 .cssYouTubeSearchTxtBx{
         padding-left: 15px;
@@ -10,5 +125,5 @@
         border-style: solid;
         border-width: 1px;
         box-shadow: inset  1px 2px 3px rgba(252, 252,252, 0.05);
-        width: 0;
+        width: 0;   /* Ensures the section shrinks*/
 }
