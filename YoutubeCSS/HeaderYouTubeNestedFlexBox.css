@@ -22,7 +22,8 @@
         border-bottom-width: 1px;
         border-bottom-color: rgb(190, 186, 186);
         border-bottom-style: solid;
-
+        
+         z-index: 100;   /*This is to ensure this element appears at the very top*/
         }
 
         .cssLeftSection001FB{

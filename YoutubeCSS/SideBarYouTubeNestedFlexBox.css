@@ -1,0 +1,9 @@
+.cssSideBar{
+    position: fixed;
+    top: 60px;
+    bottom: 0 ;
+    width: 100px;
+    left: 0;
+
+    background-color: white;
+}
