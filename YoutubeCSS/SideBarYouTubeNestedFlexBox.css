@@ -2,8 +2,31 @@
     position: fixed;
     top: 60px;
     bottom: 0 ;
-    width: 100px;
+    width: 80px;
     left: 0;
+    cursor: pointer;
+    z-index: 200;
 
     background-color: white;
+}
+
+.cssSBContainer{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cssSBContainer:hover{
+    background-color: rgb(235, 230, 230);
+}
+
+.cssSBContainer img{
+    height: 25px;
+}
+
+.cssSBContainer div {
+    color: black;
+    font-size: 11px;
 }

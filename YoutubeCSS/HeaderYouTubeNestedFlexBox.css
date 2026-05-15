@@ -4,7 +4,7 @@
         height: 60px;   /*Will also be used by the Position Property below*/
         justify-content: space-between;
         align-items: center;
-        padding-left: 15px;
+        padding-left: 35px;
         padding-right: 15px;
         padding-top: 0;
         margin-bottom: 10px;
@@ -30,6 +30,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         }
 
         .cssMidSection002FB{
@@ -48,6 +49,7 @@
         align-items: center;
         width: 200px;
         flex-shrink: 0;  /*Property ensures that the section does not shrink*/
+        cursor: pointer;
         }
 
         .cssBttnSearchIcon{
@@ -56,14 +58,55 @@
         border-style: solid;
         margin-left: -1px;
         border-width: 1px;
-        background-color: rgb(230, 226, 226); 
-        border-color: grey;
+        background-color: rgb(252, 246, 246); 
+        border-color:rgb(206, 204, 204);
         margin-right: 5px;
         padding-top: 5px;
         padding-bottom: 5px;
         padding-left: 15px;
         padding-right: 15px;
         }
+
+
+        .cssBttnSearchIcon,
+        .cssBttnVoiceSearchIcon,
+        .cssDIVCreate,
+        .cssDIVYouTubeApps,
+        .cssSeeNotification{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+
+
+        .cssBttnSearchIcon .cssSearchToolTip,
+        .cssBttnVoiceSearchIcon .cssSearchToolTip,
+        .cssDIVCreate .cssSearchToolTip,
+        .cssDIVYouTubeApps .cssSearchToolTip,
+        .cssSeeNotification .cssSearchToolTip{
+        position: absolute;
+        color: white;
+        background-color: rgb(68, 62, 62);
+        padding: 5px;
+        font-size: 12px;
+        bottom: -45px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap;
+        }
+
+        .cssBttnSearchIcon:hover   .cssSearchToolTip,
+        .cssBttnVoiceSearchIcon:hover .cssSearchToolTip, 
+        .cssDIVCreate:hover .cssSearchToolTip,
+        .cssDIVYouTubeApps:hover .cssSearchToolTip,
+        .cssSeeNotification:hover .cssSearchToolTip{
+        opacity: 1;
+        }
+
+
 
         .cssBttnVoiceSearchIcon{
         height: 40px;
@@ -73,35 +116,42 @@
         border-radius: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
+
         }
 
         .cssIMGSearchIcon{
         height: 25px;  /*Observation, when it comes to images, Use H as opposed to W*/
+        cursor: pointer;
         }
 
         .cssIMGVoiceSearchIcon{
         height: 25px;
+        cursor: pointer;
         }
 
         .cssIMGCreateIcon{
         height: 25px;
         margin-right: 10px;
+        cursor: pointer;
         }
 
         .cssIMGYTAppsIcon{
         height: 25px;
         margin-right: 10px;
+        cursor: pointer;
         }
 
         .cssIMGNotificationIcon{
         height: 25px;
         margin-right: 10px;
+        cursor: pointer;
         }
 
         .cssIMGSuperSimpleDevChannelPic{
         height: 36px;
         border-radius: 18px;
         margin-right: 10px;
+        cursor: pointer;
         }
 
         .cssIMGMenu{
@@ -117,11 +167,10 @@
 /* Applies settings to search box at the top of the webpage */
 .cssYouTubeSearchTxtBx{
         padding-left: 15px;
-        font-family: Roboto,Arial;
         font-size: medium;
         height: 36px;
         flex: 1;
-        border-color: grey;
+        border-color: rgb(206, 204, 204);
         border-radius: 3px;
         border-style: solid;
         border-width: 1px;

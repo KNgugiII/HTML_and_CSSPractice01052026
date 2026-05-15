@@ -5,6 +5,28 @@
                 column-gap: 15px;
                 row-gap: 40px;
             }
+
+            /*Applies Responsive Design to the Webpage, ie accomodates less elements per row if the screen width goes below 750px*/
+            @media (max-width:750px){
+                .cssCountryLevelGrid{
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+
+            /*Applies Responsive Design to the Webpage, ie ie accomodates more elements per row if the screen width is between 751px and 999px*/
+            @media  (min-width:751px) and(max-width:999px){
+                .cssCountryLevelGrid{
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+
+            /*Applies Responsive Design to the Webpage, ie ie accomodates more elements per row if the screen width goes above 1000px*/
+            @media (min-width:1000px){
+                .cssCountryLevelGrid{
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                }
+            }
+
             
             /* Applies Grid settings to the Specific Video Thumbnail */
             .cssCountyLevelGrid{
@@ -17,6 +39,7 @@
             .cssSubCountyLevelGrid001{
                 margin-bottom: 12px;
                 position: relative;
+                cursor: pointer;
             }
 
             /* Applies Grid settings to the Video Information */
@@ -28,17 +51,20 @@
 /* Applies Margin settings to the ProfilePic Div Section */
             .cssChannelProfPic{
                 margin-right: 15px;
+                cursor: pointer;
             }
 
             /* Applies settings to the video Thumbnail */
             .cssIMGVideoThumbnail{
                 width: 100%;
+                cursor: pointer;
             }
 
             /* Applies settings to the channel profile picture */
             .cssIMGUserProfilePic{
                 width: 100%;
                 border-radius: 40px;
+                cursor: pointer;
             }
              
             /* Applies settings to the Video Title */
@@ -46,6 +72,7 @@
                 font-weight: 600;
                 line-height: 20px;
                 margin-bottom: 5px;
+                cursor: pointer;
             }
 
             /* Applies settings to the Video Author and Stats */
@@ -58,12 +85,12 @@
             /* Applies settings ONLY to the Video Author */
             .cssPRGRPHVideoAuthor{
                 margin-bottom: 5px;
+                cursor: pointer;
             }
 
             /* Applies properties to the timer on the video thumbnail */
             .cssVideoTime{
                 position: absolute; /*Because its a content DIV, this should be absolute and its container relative*/
-                font-family: Roboto,Arial;
                 font-size: 14px;
                 font-weight: 500;
                 right: 5px;
@@ -88,7 +115,6 @@
                 right: 3px;
                 background-color: rgb(126, 5, 5);
                 color: white;
-                font-family: Roboto,Arial;
                 font-size: 12px;
                 padding-left: 6px;
                 padding-right: 6px;
